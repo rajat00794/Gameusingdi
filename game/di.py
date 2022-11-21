@@ -2,8 +2,12 @@ import pinject
 from .player import Player
 from .skills import Skills
 from .gconfig import Config
+
+
 class Player2(Player):
     pass
+
+
 class MyBindingSpec(pinject.BindingSpec):
     def configure(self, bind):
         bind("player", to_class=Player)
